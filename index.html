@@ -25,7 +25,7 @@ class Component extends DCLogic {
     ],
     2: [
       { name: 'Lançamento rápido', what: 'Toda multa recebida entra no sistema vinculada ao veículo e ao condutor responsável.' },
-      { name: 'Integração com a Senatran', what: 'A multa cai direto no sistema assim que é registrada, sem esperar o boleto.', beta: true },
+      { name: 'Integração com a Senatran', what: 'A multa cai direto no sistema assim que é registrada, sem esperar o boleto.', novo: true },
       { name: 'Repasse ágil ao condutor', what: 'Reduz o tempo entre a multa acontecer e o desconto ser feito, o que também freia o descaso.' }
     ],
     3: [
@@ -3076,10 +3076,10 @@ Feito para empresas que entregam para e-commerce, em especial para <b>Mercado Li
           <div class="px-row" style="display:grid;grid-template-columns:minmax(200px,260px) minmax(0,1fr);gap:24px;padding:28px 0;border-bottom:1px solid #C9CFC4;">
             <div>
               <div class="px-row-name" style="font-family:'Overpass Mono',monospace;font-size:18px;font-weight:600;color:#1F4D3E;line-height:1.4;">{{ row.name }}</div>
-              <sc-if value="{{ row.beta }}" hint-placeholder-val="{{ false }}">
+              <sc-if value="{{ row.novo }}" hint-placeholder-val="{{ false }}">
                 <div style="margin-top:14px;display:inline-flex;align-items:stretch;border:2px solid #C6742D;border-radius:5px;overflow:hidden;transform:rotate(-2deg);font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;line-height:1;">
-                  <span style="background:#C6742D;color:#14201B;padding:7px 10px;">Beta</span>
-                  <span style="background:#F7E7D4;color:#A8561A;padding:7px 10px;">Lista de espera</span>
+                  <span style="background:#C6742D;color:#14201B;padding:7px 10px;">Novo</span>
+                  <span style="background:#F7E7D4;color:#A8561A;padding:7px 10px;">Já disponível</span>
                 </div>
               </sc-if>
             </div>
@@ -3253,7 +3253,7 @@ class Component extends DCLogic {
     ],
     2: [
       { name: 'Lançamento rápido', what: 'Toda multa recebida entra no sistema vinculada ao veículo e ao condutor responsável.' },
-      { name: 'Integração com a Senatran', what: 'A multa cai direto no sistema assim que é registrada, sem esperar o boleto.', beta: true },
+      { name: 'Integração com a Senatran', what: 'A multa cai direto no sistema assim que é registrada, sem esperar o boleto.', novo: true },
       { name: 'Repasse ágil ao condutor', what: 'Reduz o tempo entre a multa acontecer e o desconto ser feito, o que também freia o descaso.' }
     ],
     3: [
